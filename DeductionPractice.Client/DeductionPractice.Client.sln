@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeductionPractice.Client", "DeductionPractice.Client.csproj", "{6298F368-5D3C-429B-8DD8-B6E99B93EA56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeductionsPractice.Lib", "..\DeductionsPractice.Lib\DeductionsPractice.Lib.csproj", "{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6298F368-5D3C-429B-8DD8-B6E99B93EA56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6298F368-5D3C-429B-8DD8-B6E99B93EA56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6298F368-5D3C-429B-8DD8-B6E99B93EA56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6298F368-5D3C-429B-8DD8-B6E99B93EA56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

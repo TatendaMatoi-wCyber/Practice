@@ -1,0 +1,64 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+
+    <form method="get">
+        <div class="col-md-4 ">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter city name" name="city">
+                <button class="btn btn-secondary btn-sm  input-group-text" id="basic-addon2">Search</button>
+            </div>
+        </div>
+        
+    </form>
+
+    <h1 class="display-4">Weather App</h1>
+    <div class="card">
+        <div class="row">
+            <label class="col-md-4">
+                Current Temperature
+            </label>
+            <label class="col-md-8">
+                @(Model.WeatherResponse?.Main?.Temp) K
+            </label>
+
+            <label class="col-md-4">
+                Latitude
+            </label>
+            <label class="col-md-8">
+                @(Model.WeatherResponse?.Coord.Lat)
+            </label>
+            <label class="col-md-4">
+                Longitude
+            </label>
+            <label class="col-md-8">
+                @(Model.WeatherResponse?.Coord.Lon)
+            </label>
+            <label class="col-md-4">
+                Maximum Temperature (K)
+            </label>
+            <label class="col-md-8">  
+                @(Model.WeatherResponse?.Main.TempMax )
+            </label>
+            <label class="col-md-4">
+                Minimum Temperature (K)
+            </label>
+            <label class="col-md-8">
+                @(Model.WeatherResponse?.Main.TempMin)
+            </label>
+
+            @*Pressure*@
+            <label class="col-md-4">
+                Pressure (Pa)
+            </label>
+            <label class="col-md-8">
+                @(Model.WeatherResponse?.Main.Pressure)
+            </label>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\bin\Debug\netstandard2.0\DeductionsPractice.Lib.deps.json
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\bin\Debug\netstandard2.0\DeductionsPractice.Lib.dll
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\bin\Debug\netstandard2.0\DeductionsPractice.Lib.pdb
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.AssemblyInfo.cs
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.dll
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.pdb

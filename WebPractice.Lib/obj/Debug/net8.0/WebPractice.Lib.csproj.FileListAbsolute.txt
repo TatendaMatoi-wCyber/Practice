@@ -1,0 +1,11 @@
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\bin\Debug\net8.0\WebPractice.Lib.deps.json
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\bin\Debug\net8.0\WebPractice.Lib.dll
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\bin\Debug\net8.0\WebPractice.Lib.pdb
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\obj\Debug\net8.0\WebPractice.Lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\obj\Debug\net8.0\WebPractice.Lib.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\obj\Debug\net8.0\WebPractice.Lib.AssemblyInfo.cs
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\obj\Debug\net8.0\WebPractice.Lib.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\obj\Debug\net8.0\WebPractice.Lib.dll
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\obj\Debug\net8.0\refint\WebPractice.Lib.dll
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\obj\Debug\net8.0\WebPractice.Lib.pdb
+C:\Users\HP\Desktop\Practice\WebPractice.Lib\obj\Debug\net8.0\ref\WebPractice.Lib.dll

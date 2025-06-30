@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Roaming\\Microsoft\\UserSecrets\\a6db415c-8a1c-41b7-b7d9-1e3d3c298bb3\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|c:\\users\\hp\\desktop\\practice\\ndasenda.deductions.api\\services\\tokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|solutionrelative:services\\tokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|c:\\users\\hp\\desktop\\practice\\ndasenda.deductions.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|c:\\users\\hp\\desktop\\practice\\ndasenda.deductions.api\\models\\jrequestsbatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|solutionrelative:models\\jrequestsbatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|c:\\users\\hp\\desktop\\practice\\ndasenda.deductions.api\\models\\jresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|solutionrelative:models\\jresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|c:\\users\\hp\\desktop\\practice\\ndasenda.deductions.api\\models\\jpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|solutionrelative:models\\jpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|c:\\users\\hp\\desktop\\practice\\ndasenda.deductions.api\\models\\authtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|solutionrelative:models\\authtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|c:\\users\\hp\\desktop\\practice\\ndasenda.deductions.api\\services\\ndasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|solutionrelative:services\\ndasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|c:\\users\\hp\\desktop\\practice\\ndasenda.deductions.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B07445-3181-47B9-907A-33E520B6356D}|Ndasenda.Deductions.API.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Roaming\\Microsoft\\UserSecrets\\a6db415c-8a1c-41b7-b7d9-1e3d3c298bb3\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\a6db415c-8a1c-41b7-b7d9-1e3d3c298bb3\\secrets.json",
+              "ToolTip": "C:\\Users\\HP\\AppData\\Roaming\\Microsoft\\UserSecrets\\a6db415c-8a1c-41b7-b7d9-1e3d3c298bb3\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\a6db415c-8a1c-41b7-b7d9-1e3d3c298bb3\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-30T09:51:09.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T09:38:53.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JResponse.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Models\\JResponse.cs",
+              "RelativeDocumentMoniker": "Models\\JResponse.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Models\\JResponse.cs",
+              "RelativeToolTip": "Models\\JResponse.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T08:09:37.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JPayment.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Models\\JPayment.cs",
+              "RelativeDocumentMoniker": "Models\\JPayment.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Models\\JPayment.cs",
+              "RelativeToolTip": "Models\\JPayment.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T08:05:36.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JRequestsBatch.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Models\\JRequestsBatch.cs",
+              "RelativeDocumentMoniker": "Models\\JRequestsBatch.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Models\\JRequestsBatch.cs",
+              "RelativeToolTip": "Models\\JRequestsBatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T08:00:26.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthToken.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Models\\AuthToken.cs",
+              "RelativeDocumentMoniker": "Models\\AuthToken.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Models\\AuthToken.cs",
+              "RelativeToolTip": "Models\\AuthToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:16:29.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NdasendaApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Services\\NdasendaApiClient.cs",
+              "RelativeDocumentMoniker": "Services\\NdasendaApiClient.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Services\\NdasendaApiClient.cs",
+              "RelativeToolTip": "Services\\NdasendaApiClient.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAewBYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:15:21.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TokenStorage.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Services\\TokenStorage.cs",
+              "RelativeDocumentMoniker": "Services\\TokenStorage.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Services\\TokenStorage.cs",
+              "RelativeToolTip": "Services\\TokenStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:14:21.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\Ndasenda.Deductions.API\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:12:36.265Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
