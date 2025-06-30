@@ -1,5 +1,4 @@
 ﻿using DeductionsPractice.Lib;
-using DeductionsPractice.Lib.Security;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

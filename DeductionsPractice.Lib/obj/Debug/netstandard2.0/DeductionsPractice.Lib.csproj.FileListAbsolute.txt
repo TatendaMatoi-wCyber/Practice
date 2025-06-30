@@ -8,3 +8,4 @@ C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\Ded
 C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.dll
 C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.pdb
+C:\Users\HP\Desktop\Practice\DeductionsPractice.Lib\obj\Debug\netstandard2.0\DeductionsPractice.Lib.sourcelink.json

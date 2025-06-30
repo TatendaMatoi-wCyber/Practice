@@ -4,7 +4,7 @@ using System.IO;
 using System.Text.Json;
 using DeductionsPractice.Lib;
 
-namespace DeductionsPractice.Lib.Security
+namespace DeductionPractice.Client
 {
     public class SecureTokenService
     {

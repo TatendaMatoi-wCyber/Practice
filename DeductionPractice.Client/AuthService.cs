@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http.Headers;
 using System.Text.Json;
+using DeductionsPractice.Lib;
 
-namespace DeductionsPractice.Lib.Security
+namespace DeductionPractice.Client
 {
     public class AuthService
     {

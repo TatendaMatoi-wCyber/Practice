@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Text.Json;
-using DeductionsPractice.Lib.Security;
+using DeductionPractice.Client;
 
 public class NdasendaApiClient : INdasendaApiClient
 {

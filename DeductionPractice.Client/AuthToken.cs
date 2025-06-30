@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DeductionsPractice.Lib.Security
+namespace DeductionPractice.Client
 {
     public class AuthToken
     {
