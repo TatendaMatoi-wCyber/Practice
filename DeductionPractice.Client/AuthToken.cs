@@ -10,5 +10,6 @@ namespace DeductionPractice.Client
         public string? TokenType { get; set; }
         public int? ExpiresIn { get; set; }
         public string? RefreshToken { get; set; }
-    }
+        public DateTime? IssuedAt { get; set; }
+     }
 }

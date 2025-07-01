@@ -26,13 +26,13 @@ namespace DeductionPractice.Client
 
         public async Task<AuthToken?> LoginAsync()
         {
-            var username = _config["Ndasenda:Username"] ?? throw new Exception("Username missing in secrets.");
-            var password = _config["Ndasenda:Password"] ?? throw new Exception("Password missing in secrets.");
-            //Console.WriteLine("Enter Username");
-            //var username = Console.ReadLine();
+            //var username = _config["Ndasenda:Username"] ?? throw new Exception("Username missing in secrets.");
+            //var password = _config["Ndasenda:Password"] ?? throw new Exception("Password missing in secrets.");
+            Console.WriteLine("Enter Username");
+            var username = Console.ReadLine();
 
-            //Console.WriteLine("Enter Password");
-            //var password = Console.ReadLine();
+            Console.WriteLine("Enter Password");
+            var password = Console.ReadLine();
 
 
             var content = new FormUrlEncodedContent(new[]
