@@ -46,7 +46,7 @@ namespace DeductionPractice.Client
             if (!response.IsSuccessStatusCode) return null;
 
             var json = await response.Content.ReadAsStringAsync();
-            var token = JsonSerializer.Deserialize<AuthToken>(json, JsonSerializerService.Options);
+            var token = JsonSerializer.Deserialize<AuthToken>(json, JsonSerializerService.Option);
             return token;
         }
 

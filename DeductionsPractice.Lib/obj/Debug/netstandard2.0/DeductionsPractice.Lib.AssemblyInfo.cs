@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeductionsPractice.Lib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fb1f8b66ffb85b26b4bbd3d9f8a1dae8d4d890f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c5103422df1fecc0037181678a761a15a29dac8")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeductionsPractice.Lib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeductionsPractice.Lib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
