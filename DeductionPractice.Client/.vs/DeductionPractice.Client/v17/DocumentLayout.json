@@ -3,17 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\jsonserializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|c:\\users\\hp\\desktop\\practice\\deductionpractice.client\\authtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:authtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|c:\\users\\hp\\desktop\\practice\\deductionpractice.client\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|c:\\users\\hp\\desktop\\practice\\deductionpractice.client\\ndasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:ndasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,14 +11,13 @@
       "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|c:\\users\\hp\\desktop\\practice\\deductionpractice.client\\securetokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:securetokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\indasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\jsonserializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\jresponsesbatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\indasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\jresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -45,7 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,7 +53,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "JsonSerializerService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\JsonSerializerService.cs",
               "RelativeDocumentMoniker": "..\\DeductionsPractice.Lib\\JsonSerializerService.cs",
@@ -78,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "JResponsesBatch.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\JResponsesBatch.cs",
               "RelativeDocumentMoniker": "..\\DeductionsPractice.Lib\\JResponsesBatch.cs",
@@ -91,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "JResponse.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\JResponse.cs",
               "RelativeDocumentMoniker": "..\\DeductionsPractice.Lib\\JResponse.cs",
@@ -104,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\HP\\AppData\\Roaming\\Microsoft\\UserSecrets\\ab91bdf3-d58a-4b27-98a6-94ace6a350c2\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\ab91bdf3-d58a-4b27-98a6-94ace6a350c2\\secrets.json",
@@ -116,80 +104,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAIAwwDMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwDMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T12:37:46.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "NdasendaApiClient.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\NdasendaApiClient.cs",
               "RelativeDocumentMoniker": "NdasendaApiClient.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\NdasendaApiClient.cs",
               "RelativeToolTip": "NdasendaApiClient.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCwAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwCwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T12:36:39.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "INdasendaApiClient.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\INdasendaApiClient.cs",
               "RelativeDocumentMoniker": "..\\DeductionsPractice.Lib\\INdasendaApiClient.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\INdasendaApiClient.cs",
               "RelativeToolTip": "..\\DeductionsPractice.Lib\\INdasendaApiClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T12:35:27.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SecureTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\SecureTokenService.cs",
-              "RelativeDocumentMoniker": "SecureTokenService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\SecureTokenService.cs",
-              "RelativeToolTip": "SecureTokenService.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwCMAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T12:31:31.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthToken.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\AuthToken.cs",
-              "RelativeDocumentMoniker": "AuthToken.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\AuthToken.cs",
-              "RelativeToolTip": "AuthToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T12:31:24.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\AuthService.cs",
-              "RelativeDocumentMoniker": "AuthService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\AuthService.cs",
-              "RelativeToolTip": "AuthService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAUwDAAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T12:31:12.105Z",
               "EditorCaption": ""
             }
           ]

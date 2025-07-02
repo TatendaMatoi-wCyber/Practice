@@ -36,7 +36,7 @@ namespace DeductionsPractice.Lib
 
         public static string ToJson<T>(T obj) => JsonSerializer.Serialize(obj, Options);
 
-        public static T? FromJson<T>(string json) where T : class
+        public static T? FromJson<T>(string json)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace DeductionsPractice.Lib
             catch (Exception ex)
             {
                 Console.WriteLine(" RAW JSON: " + json);
-                
+
                 Console.WriteLine($" JSON Deserialize Error: {ex.Message}");
                 return default;
             }

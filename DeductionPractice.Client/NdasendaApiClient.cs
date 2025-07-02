@@ -5,83 +5,113 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Text.Json;
 using DeductionPractice.Client;
+using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Logging;
+using System.Text;
 
-public class NdasendaApiClient : INdasendaApiClient
+public class NdasendaApiClient
 {
-    private readonly HttpClient _http;
-
-    public NdasendaApiClient(string accessToken)
+    private HttpClient? _httpClient;
+    HttpClient HttpClient
     {
-        Console.WriteLine("Initializing client with token: " + accessToken?.Substring(0, 20) + "...");
-
-        _http = new HttpClient
+        get
         {
-            BaseAddress = new Uri("https://sandbox.deductions.ndasenda.co.zw")
-        };
-
-        _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-        _http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            if (_httpClient == null)
+            {
+                _httpClient = new HttpClient
+                {
+                    BaseAddress = new Uri(_options.BaseUrl)
+                };
+                _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            }
+            return _httpClient;
+        }
     }
 
-    public async Task<AuthToken?> AuthenticateAsync(string username, string password)
+
+    private readonly ApiClientOptions _options;
+    private readonly ILogger<NdasendaApiClient> _log;
+    private DateTime TokenExpiryDate { get; set; }
+    private bool IsAuthenticated => TokenExpiryDate > DateTime.Now && !string.IsNullOrWhiteSpace(_options.AccessToken);
+
+    public NdasendaApiClient(ApiClientOptions options, ILogger<NdasendaApiClient> logger)
+    {
+        _options = options;
+        _log = logger;
+    }
+
+    public NdasendaApiClient(IOptions<ApiClientOptions> options, ILogger<NdasendaApiClient> logger)
+    {
+        _options = options.Value;
+        _log = logger;
+    }
+
+    private async Task<bool> AuthenticateAsync()
     {
         var form = new Dictionary<string, string>
         {
             { "grant_type", "password" },
-            { "username", username },
-            { "password", password }
+            { "username", _options.Username },
+            { "password", _options.Password }
         };
         var content = new FormUrlEncodedContent(form);
-        var res = await _http.PostAsync("connect/token", content);
-        if (!res.IsSuccessStatusCode) return null;
-
-        var json = await res.Content.ReadAsStringAsync();
-        return JsonSerializerService.FromJson<AuthToken>(json);
-    }
-
-    public async Task<JRequestsBatch?> PostDeductionRequestAsync(JRequestsBatch batch)
-    {
-        var json = JsonSerializerService.ToJson(batch);
-        Console.WriteLine("\n \n \n \n \nOutgoing Request:\n" + json);
-
-        var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
-
-        var res = await _http.PostAsync("/api/v1/deductions/requests", content);
-
-        var responseJson = await res.Content.ReadAsStringAsync();
-        Console.WriteLine("\n \n \n \n API Response:\n" + responseJson);
-
-        if (!res.IsSuccessStatusCode)
+        try
         {
-            Console.WriteLine($"Status: {(int)res.StatusCode} - {res.ReasonPhrase}");
-            return null;
+            var res = await HttpClient.PostAsync("connect/token", content);
+            if (!res.IsSuccessStatusCode) return false;
+            var json = await res.Content.ReadAsStringAsync();
+            var authToken = JsonSerializerService.FromJson<AuthToken>(json)!;
+            _options.AccessToken = authToken.AccessToken;
+            TokenExpiryDate = DateTime.Now.AddSeconds(authToken.ExpiresIn - 60);
+            return true;
         }
-
-        return JsonSerializerService.FromJson<JRequestsBatch>(responseJson);
+        catch (Exception ex)
+        {
+            _log.LogError("Authentication Error: {msg}", ex.Message);
+            return false;
+        }
     }
 
+    public Task<JRequestsBatch?> PostDeductionRequestAsync(JRequestsBatch batch)
+         => SendRequest<JRequestsBatch?>($"/api/v1/deductions/requests", HttpMethod.Post, batch);
 
-    public async Task<List<JResponsesBatch>> GetDeductionResponsesAsync(string batchId)
+    public Task<List<JResponsesBatch>?> GetDeductionResponsesAsync(string batchId)
+         => SendRequest<List<JResponsesBatch>?>($"/api/v1/deductions/responses/{batchId}", HttpMethod.Get);
+
+    public Task<JPaymentBatch?> GetPaymentBatchAsync(string batchId)
+         => SendRequest<JPaymentBatch?>($"/api/v1/deductions/payments/{batchId}", HttpMethod.Get);
+
+    private async Task<T?> SendRequest<T>(string api, HttpMethod httpMethod, object? data = null) where T : new()
     {
-        var formattedBatchId = batchId.ToString().Replace("\"", "");
-        var res = await _http.GetAsync($"/api/v1/deductions/responses/{formattedBatchId}");
-        var raw = await res.Content.ReadAsStringAsync();
-
-        //if (!res.IsSuccessStatusCode) return null;
-        //var test = JsonSerializer.Deserialize<List<JResponse>>(raw, JsonSerializerService.Options);
-        //return test!;
-        //if (!res.IsSuccessStatusCode) return new List<JResponse>();
-        if (!res.IsSuccessStatusCode) return new List<JResponsesBatch>();
-        return JsonSerializerService.FromJson<List<JResponsesBatch>>(raw) ?? new List<JResponsesBatch>();
-        //var batches = JsonSerializerService.FromJson<List<JResponsesBatch>>(raw);
-        //return batches?.SelectMany(b => b.Records ?? new List<JResponse>()).ToList() ?? new List<JResponse>();
-    }
-
-    public async Task<JPaymentBatch?> GetPaymentBatchAsync(string batchId)
-    {
-        var res = await _http.GetAsync($"/api/v1/deductions/payments/{batchId}");
-        if (!res.IsSuccessStatusCode) return null;
-        var raw = await res.Content.ReadAsStringAsync();
-        return JsonSerializerService.FromJson<JPaymentBatch>(raw);
+        _log.LogInformation("Sending request {method}:{api}", httpMethod, api);
+        if (!IsAuthenticated || !await AuthenticateAsync()) return default;
+        var request = new HttpRequestMessage(httpMethod, $"{_options.BaseUrl}/{api}");
+        request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _options.AccessToken);
+        if (data != null)
+        {
+            var content = new StringContent(JsonSerializerService.ToJson(data), Encoding.UTF8, new MediaTypeHeaderValue("application/json"));
+            request.Content = content;
+        }
+        try
+        {
+            var response = await HttpClient.SendAsync(request);
+            var resMsg = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                _log.LogError("Request failed {method}:{api} - {msg}", httpMethod, api, resMsg);
+                return default;
+            }
+            return JsonSerializerService.FromJson<T?>(resMsg);
+        }
+        catch (HttpRequestException ex)
+        {
+            _log.LogError("Error while sending {method} request to api: {api} - {msg}", httpMethod, api, ex);
+            throw;
+        }
+        catch (Exception ex)
+        {
+            _log.LogError("Error while sending {method} request to api: {api} - {msg}", httpMethod, api, ex);
+            return default;
+        }
     }
 }
