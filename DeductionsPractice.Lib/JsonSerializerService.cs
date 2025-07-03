@@ -13,18 +13,18 @@ namespace DeductionsPractice.Lib
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
             IgnoreReadOnlyProperties = true,
             PropertyNameCaseInsensitive = true,
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-            WriteIndented = true
-        };
-        public static readonly JsonSerializerOptions Option = new JsonSerializerOptions
-        {
-            AllowTrailingCommas = true,
-            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-            IgnoreReadOnlyProperties = true,
-            PropertyNameCaseInsensitive = true,
             PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
             WriteIndented = true
         };
+        //public static readonly JsonSerializerOptions Option = new JsonSerializerOptions
+        //{
+        //    AllowTrailingCommas = true,
+        //    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+        //    IgnoreReadOnlyProperties = true,
+        //    PropertyNameCaseInsensitive = true,
+        //    PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
+        //    WriteIndented = true
+        //};
 
         static JsonSerializerService()
         {

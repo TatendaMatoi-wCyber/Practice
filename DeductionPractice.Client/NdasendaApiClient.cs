@@ -8,6 +8,7 @@ using DeductionPractice.Client;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Logging;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 
 public class NdasendaApiClient
 {
@@ -31,6 +32,7 @@ public class NdasendaApiClient
 
     private readonly ApiClientOptions _options;
     private readonly ILogger<NdasendaApiClient> _log;
+
     private DateTime TokenExpiryDate { get; set; }
     private bool IsAuthenticated => TokenExpiryDate > DateTime.Now && !string.IsNullOrWhiteSpace(_options.AccessToken);
 
@@ -48,29 +50,47 @@ public class NdasendaApiClient
 
     private async Task<bool> AuthenticateAsync()
     {
+        _log.LogInformation("Authenticating...");
         var form = new Dictionary<string, string>
-        {
-            { "grant_type", "password" },
-            { "username", _options.Username },
-            { "password", _options.Password }
-        };
+    {
+        { "grant_type", "password" },
+        { "username", _options.Username },
+        { "password", _options.Password }
+    };
+
         var content = new FormUrlEncodedContent(form);
         try
         {
             var res = await HttpClient.PostAsync("connect/token", content);
-            if (!res.IsSuccessStatusCode) return false;
             var json = await res.Content.ReadAsStringAsync();
-            var authToken = JsonSerializerService.FromJson<AuthToken>(json)!;
+
+            if (!res.IsSuccessStatusCode)
+            {
+                _log.LogError("Failed to authenticate. Response: {response}", json);
+                return false;
+            }
+
+            var authToken = JsonSerializerService.FromJson<AuthToken>(json);
+
+            if (authToken == null || string.IsNullOrWhiteSpace(authToken.AccessToken))
+            {
+                _log.LogError("Failed to deserialize authentication response.");
+                return false;
+            }
+
             _options.AccessToken = authToken.AccessToken;
             TokenExpiryDate = DateTime.Now.AddSeconds(authToken.ExpiresIn - 60);
+            _log.LogInformation("Token acquired. Expires at: {expiry}", TokenExpiryDate);
+
             return true;
         }
         catch (Exception ex)
         {
-            _log.LogError("Authentication Error: {msg}", ex.Message);
+            _log.LogError("Authentication error: {message}", ex.Message);
             return false;
         }
     }
+
 
     public Task<JRequestsBatch?> PostDeductionRequestAsync(JRequestsBatch batch)
          => SendRequest<JRequestsBatch?>($"/api/v1/deductions/requests", HttpMethod.Post, batch);
@@ -83,8 +103,18 @@ public class NdasendaApiClient
 
     private async Task<T?> SendRequest<T>(string api, HttpMethod httpMethod, object? data = null) where T : new()
     {
-        _log.LogInformation("Sending request {method}:{api}", httpMethod, api);
-        if (!IsAuthenticated || !await AuthenticateAsync()) return default;
+        
+        if (!IsAuthenticated) 
+        {
+            _log.LogDebug("Client is not authenticated. Attempting to authenticate...");
+            if (!await AuthenticateAsync()) 
+            {
+                _log.LogError("Authentication failed. Cannot send request {method}:{api}.", httpMethod, api);
+                return default; 
+            }
+          
+        }
+        _log.LogDebug("IsAuthenticated: {auth}, Token Expiry: {expiry}", IsAuthenticated, TokenExpiryDate);
         var request = new HttpRequestMessage(httpMethod, $"{_options.BaseUrl}/{api}");
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _options.AccessToken);
         if (data != null)

@@ -29,12 +29,6 @@ namespace DeductionPractice.Client
             File.WriteAllText(TokenFile, json);
         }
 
-        //public bool TokenNeedsRefresh(AuthToken token)
-        //{
-        //    return string.IsNullOrWhiteSpace(token.AccessToken) ||
-        //           DateTime.UtcNow > token.IssuedAt.AddSeconds(token.ExpiresIn - 60);
-        //}
-
         public string GetSecretToken()
         {
             return _config["Ndasenda:SecretToken"] ?? throw new Exception("Secret token not found in secrets.");

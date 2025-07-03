@@ -26,8 +26,7 @@ namespace DeductionPractice.Client
 
         public async Task<AuthToken?> LoginAsync()
         {
-            //var username = _config["Ndasenda:Username"] ?? throw new Exception("Username missing in secrets.");
-            //var password = _config["Ndasenda:Password"] ?? throw new Exception("Password missing in secrets.");
+            
             Console.WriteLine("Enter Username");
             var username = Console.ReadLine();
 
@@ -46,7 +45,7 @@ namespace DeductionPractice.Client
             if (!response.IsSuccessStatusCode) return null;
 
             var json = await response.Content.ReadAsStringAsync();
-            var token = JsonSerializer.Deserialize<AuthToken>(json, JsonSerializerService.Option);
+            var token = JsonSerializer.Deserialize<AuthToken>(json, JsonSerializerService.Options);
             return token;
         }
 
