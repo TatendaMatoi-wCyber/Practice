@@ -94,6 +94,8 @@ public class NdasendaApiClient
 
     public Task<JRequestsBatch?> PostDeductionRequestAsync(JRequestsBatch batch)
          => SendRequest<JRequestsBatch?>($"/api/v1/deductions/requests", HttpMethod.Post, batch);
+    public Task<JRequestsBatch?> CommitDeductionBatchAsync(string batchId)
+        => SendRequest<JRequestsBatch?>($"/api/v1/deductions/requests/commit/{batchId}", HttpMethod.Post);
 
     public Task<List<JResponsesBatch>?> GetDeductionResponsesAsync(string batchId)
          => SendRequest<List<JResponsesBatch>?>($"/api/v1/deductions/responses/{batchId}", HttpMethod.Get);

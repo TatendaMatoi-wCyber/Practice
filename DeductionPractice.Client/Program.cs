@@ -31,6 +31,7 @@ namespace DeductionPractice.Client
             Console.WriteLine("Creating Deductions Request");
             List<JResponsesBatch> response = await client.GetDeductionResponsesAsync("REQ25050CF1");
 
+
             Console.WriteLine("\n--- Deduction Responses ---");
 
             if (response != null && response.Count > 0)
