@@ -1,7 +1,7 @@
 ﻿using DeductionsPractice.Lib;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace DeductionPractice.Client
@@ -28,7 +28,6 @@ namespace DeductionPractice.Client
 
             var client = new NdasendaApiClient(options, Logger);
 
-        
             string? lastBatchId = null;
             bool exit = false;
 
@@ -106,19 +105,28 @@ namespace DeductionPractice.Client
                                 var paymentConfirm = Console.ReadLine()?.ToLower();
                                 if (paymentConfirm == "y")
                                 {
-                                    var payment = await client.GetPaymentBatchAsync(lastBatchId);
-                                    if (payment != null)
+                                    Console.Write("Enter Start Date (yyyyMMdd): ");
+                                    var start = Console.ReadLine();
+                                    Console.Write("Enter End Date (yyyyMMdd): ");
+                                    var end = Console.ReadLine();
+                                    string deductionCode = batch.DeductionCode;
+
+                                    var batches = await client.GetPaymentBatchByDateAsync(start, end, deductionCode);
+                                    if (batches != null && batches.Count > 0)
                                     {
-                                        Console.WriteLine("\nPayment Batch:");
-                                        foreach (var p in payment.Records)
+                                        var selectedId = batches[0].Id;
+                                        var payment = await client.GetPaymentBatchAsync(selectedId);
+                                        if (payment != null)
                                         {
-                                            Console.WriteLine($"ECNumber: {p.EcNumber}, Amount: {p.Amount}, Date: {p.TransDate}");
+                                            Console.WriteLine("\nPayment Batch:");
+                                            foreach (var p in payment.Records)
+                                            {
+                                                Console.WriteLine($"ID: {p.Id}, Amount: {p.Amount}, Date: {p.TransDate}, Name {p.Name}");
+                                            }
                                         }
+                                        else Console.WriteLine("No payments found.");
                                     }
-                                    else
-                                    {
-                                        Console.WriteLine("No payments found.");
-                                    }
+                                    else Console.WriteLine("No payment batches found in that date range.");
                                 }
                             }
                         }
@@ -156,14 +164,27 @@ namespace DeductionPractice.Client
                         break;
 
                     case "4":
-                        Console.Write("Enter Batch ID: ");
-                        var payId = Console.ReadLine();
-                        var paymentBatch = await client.GetPaymentBatchAsync(payId);
-                        if (paymentBatch != null)
+                        Console.Write("Enter Start Date (yyyyMMdd): ");
+                        var sDate = Console.ReadLine();
+                        Console.Write("Enter End Date (yyyyMMdd): ");
+                        var eDate = Console.ReadLine();
+                        Console.Write("Enter Deduction Code: ");
+                        var code = Console.ReadLine();
+
+                        var resultBatches = await client.GetPaymentBatchByDateAsync(sDate, eDate, code);
+                        if (resultBatches != null && resultBatches.Count > 0)
                         {
-                            foreach (var p in paymentBatch.Records)
+                            foreach (var batchEntry in resultBatches)
                             {
-                                Console.WriteLine($"ECNumber: {p.EcNumber}, Amount: {p.Amount}, Date: {p.TransDate}");
+                                Console.WriteLine($"Found Payment Batch: ID {batchEntry.Id}, Total: {batchEntry.TotalAmount}, Count: {batchEntry.Records.Count}");
+                                var fullBatch = await client.GetPaymentBatchAsync(batchEntry.Id);
+                                if (fullBatch != null)
+                                {
+                                    foreach (var record in fullBatch.Records)
+                                    {
+                                        Console.WriteLine($" - ECNumber: {record.EcNumber}, Amount: {record.Amount}, Date: {record.TransDate}");
+                                    }
+                                }
                             }
                         }
                         else Console.WriteLine("No payment results found.");
