@@ -100,8 +100,11 @@ public class NdasendaApiClient
     public Task<List<JResponsesBatch>?> GetDeductionResponsesAsync(string batchId)
          => SendRequest<List<JResponsesBatch>?>($"/api/v1/deductions/responses/{batchId}", HttpMethod.Get);
 
-    public Task<JPaymentBatch?> GetPaymentBatchAsync(string batchId)
-         => SendRequest<JPaymentBatch?>($"/api/v1/deductions/payments/{batchId}", HttpMethod.Get);
+    public Task<List<JPaymentBatch>?> GetPaymentBatchByDateAsync(string startDate, string endDate, string deductionCode)
+        => SendRequest<List<JPaymentBatch>?>($"/api/v1/deductions/payments/{startDate}/{endDate}/{deductionCode}", HttpMethod.Get);
+
+    public Task<JPaymentBatch?> GetPaymentBatchAsync(string Id)
+         => SendRequest<JPaymentBatch?>($"/api/v1/deductions/payments/{Id}", HttpMethod.Get);
 
     private async Task<T?> SendRequest<T>(string api, HttpMethod httpMethod, object? data = null) where T : new()
     {

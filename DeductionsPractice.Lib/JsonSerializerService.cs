@@ -16,15 +16,15 @@ namespace DeductionsPractice.Lib
             PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
             WriteIndented = true
         };
-        //public static readonly JsonSerializerOptions Option = new JsonSerializerOptions
-        //{
-        //    AllowTrailingCommas = true,
-        //    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-        //    IgnoreReadOnlyProperties = true,
-        //    PropertyNameCaseInsensitive = true,
-        //    PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
-        //    WriteIndented = true
-        //};
+        public static readonly JsonSerializerOptions ToJsonOptions = new JsonSerializerOptions
+        {
+            AllowTrailingCommas = true,
+            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+            IgnoreReadOnlyProperties = true,
+            PropertyNameCaseInsensitive = true,
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true
+        };
 
         static JsonSerializerService()
         {
@@ -34,7 +34,7 @@ namespace DeductionsPractice.Lib
             Options.Converters.Add(new DateConverter());
         }
 
-        public static string ToJson<T>(T obj) => JsonSerializer.Serialize(obj, Options);
+        public static string ToJson<T>(T obj) => JsonSerializer.Serialize(obj, ToJsonOptions);
 
         public static T? FromJson<T>(string json)
         {
