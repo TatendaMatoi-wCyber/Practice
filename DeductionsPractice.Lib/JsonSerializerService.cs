@@ -13,7 +13,7 @@ namespace DeductionsPractice.Lib
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
             IgnoreReadOnlyProperties = true,
             PropertyNameCaseInsensitive = true,
-            PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             WriteIndented = true
         };
         public static readonly JsonSerializerOptions ToJsonOptions = new JsonSerializerOptions
@@ -28,13 +28,14 @@ namespace DeductionsPractice.Lib
 
         static JsonSerializerService()
         {
-            Options.Converters.Add(new JsonStringEnumConverter());
+            Options.Converters.Add(new JsonStringEnumConverter(namingPolicy: null));
             Options.Converters.Add(new IntConverter());
             Options.Converters.Add(new DecimalConverter());
             Options.Converters.Add(new DateConverter());
         }
 
-        public static string ToJson<T>(T obj) => JsonSerializer.Serialize(obj, ToJsonOptions);
+        public static string ToJson<T>(T obj) => JsonSerializer.Serialize(obj);
+      
 
         public static T? FromJson<T>(string json)
         {
@@ -44,9 +45,6 @@ namespace DeductionsPractice.Lib
             }
             catch (Exception ex)
             {
-                Console.WriteLine(" RAW JSON: " + json);
-
-                Console.WriteLine($" JSON Deserialize Error: {ex.Message}");
                 return default;
             }
         }

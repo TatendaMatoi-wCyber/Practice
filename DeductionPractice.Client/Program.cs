@@ -23,7 +23,8 @@ namespace DeductionPractice.Client
             {
                 BaseUrl = "https://sandbox.deductions.ndasenda.co.zw",
                 Username = "Pardingtontm@gmail.com",
-                Password = "Ndinokuda@1"
+                Password = "Ndinokuda@1",
+                SecurityToken = "123456"
             };
 
             var client = new NdasendaApiClient(options, Logger);
@@ -38,7 +39,8 @@ namespace DeductionPractice.Client
                 Console.WriteLine("2. Commit deduction request");
                 Console.WriteLine("3. Get deduction response");
                 Console.WriteLine("4. Get deduction payment");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Get Account Information");
+                Console.WriteLine("0. Exit");
                 Console.Write("Choose an option: ");
                 var choice = Console.ReadLine();
 
@@ -191,6 +193,48 @@ namespace DeductionPractice.Client
                         break;
 
                     case "5":
+                        try
+                        {
+                            var security = new Security
+                            {
+                                SecurityToken = options.SecurityToken
+                            };
+
+                            var accountInfo = await client.CheckAccountAsync(security);
+
+                            if (accountInfo != null)
+                            {
+                                Console.WriteLine("\n=== Account Information ===");
+                                Console.WriteLine($"Organization       : {accountInfo.Organization}");
+                                Console.WriteLine($"Organization Status: {accountInfo.OrganizationStatus}");
+                                Console.WriteLine($"User Account Role  : {accountInfo.UserAccountRole}");
+
+                                if (accountInfo.DeductionCodes != null && accountInfo.DeductionCodes.Count > 0)
+                                {
+                                    Console.WriteLine("\n-- Deduction Codes --");
+                                    foreach (var codes in accountInfo.DeductionCodes)
+                                    {
+                                        Console.WriteLine($"Code: {codes.Code}, Name: {codes.Name}, Paymaster: {codes.Paymaster}, Status: {codes.Status}");
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("No deduction codes found for this account.");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Failed to retrieve account information.");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"An error occurred while checking account: {ex.Message}");
+                        }
+                        break;
+
+
+                    case "0":
                         exit = true;
                         break;
 

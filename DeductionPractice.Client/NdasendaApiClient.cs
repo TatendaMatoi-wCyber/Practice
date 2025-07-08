@@ -70,7 +70,7 @@ public class NdasendaApiClient
                 return false;
             }
 
-            var authToken = JsonSerializerService.FromJson<AuthToken>(json);
+            var authToken = JsonSerializer.Deserialize<AuthToken>(json);
 
             if (authToken == null || string.IsNullOrWhiteSpace(authToken.AccessToken))
             {
@@ -94,6 +94,8 @@ public class NdasendaApiClient
 
     public Task<JRequestsBatch?> PostDeductionRequestAsync(JRequestsBatch batch)
          => SendRequest<JRequestsBatch?>($"/api/v1/deductions/requests", HttpMethod.Post, batch);
+    public Task<AccountCheckResponse?> CheckAccountAsync(Security securityToken)
+         => SendRequest<AccountCheckResponse?>($"/api/v1/Account/check", HttpMethod.Post, securityToken);
     public Task<JRequestsBatch?> CommitDeductionBatchAsync(string batchId)
         => SendRequest<JRequestsBatch?>($"/api/v1/deductions/requests/commit/{batchId}", HttpMethod.Post);
 
@@ -120,7 +122,7 @@ public class NdasendaApiClient
           
         }
         _log.LogDebug("IsAuthenticated: {auth}, Token Expiry: {expiry}", IsAuthenticated, TokenExpiryDate);
-        var request = new HttpRequestMessage(httpMethod, $"{_options.BaseUrl}/{api}");
+        var request = new HttpRequestMessage(httpMethod, $"{_options.BaseUrl}{api}");
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _options.AccessToken);
         if (data != null)
         {

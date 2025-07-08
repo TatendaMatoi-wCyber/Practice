@@ -10,5 +10,6 @@ namespace DeductionsPractice.Lib
         public string? AccessToken { get; set; }
         public string Username { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
+        public string SecurityToken { get; set; } = string.Empty;
     }
 }
