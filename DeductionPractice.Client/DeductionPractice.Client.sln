@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeductionPractice.Client", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeductionsPractice.Lib", "..\DeductionsPractice.Lib\DeductionsPractice.Lib.csproj", "{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeductionsPractice.Web", "..\DeductionsPractice.Web\DeductionsPractice.Web.csproj", "{2DCF8141-D20E-4E32-8AC9-8765D430B687}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeductionsPractice.Web", "..\DeductionsPractice.Web\DeductionsPractice.Web.csproj", "{B7B70890-C661-4FDB-B2EF-3E34112ED6FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +23,15 @@ Global
 		{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2DCF8141-D20E-4E32-8AC9-8765D430B687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2DCF8141-D20E-4E32-8AC9-8765D430B687}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2DCF8141-D20E-4E32-8AC9-8765D430B687}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2DCF8141-D20E-4E32-8AC9-8765D430B687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B70890-C661-4FDB-B2EF-3E34112ED6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B70890-C661-4FDB-B2EF-3E34112ED6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B70890-C661-4FDB-B2EF-3E34112ED6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B70890-C661-4FDB-B2EF-3E34112ED6FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6C311B3-F6E5-4DDD-8AD0-36DA23410C6E}
 	EndGlobalSection
 EndGlobal

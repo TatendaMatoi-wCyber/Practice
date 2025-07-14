@@ -3,15 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\jsonserializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|c:\\users\\hp\\desktop\\practice\\deductionpractice.client\\ndasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:ndasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|c:\\users\\hp\\desktop\\practice\\deductionpractice.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2AED0DB-7132-489F-81C9-390ACA57C7C7}|..\\DeductionsPractice.Web\\DeductionsPractice.Web.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2AED0DB-7132-489F-81C9-390ACA57C7C7}|..\\DeductionsPractice.Web\\DeductionsPractice.Web.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.web\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2AED0DB-7132-489F-81C9-390ACA57C7C7}|..\\DeductionsPractice.Web\\DeductionsPractice.Web.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.web\\services\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2AED0DB-7132-489F-81C9-390ACA57C7C7}|..\\DeductionsPractice.Web\\DeductionsPractice.Web.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.web\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,41 +46,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JsonSerializerService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\JsonSerializerService.cs",
-              "RelativeDocumentMoniker": "..\\DeductionsPractice.Lib\\JsonSerializerService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\JsonSerializerService.cs",
-              "RelativeToolTip": "..\\DeductionsPractice.Lib\\JsonSerializerService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCAAAAA7AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Web\\Services\\UserContext.cs",
+              "RelativeDocumentMoniker": "..\\DeductionsPractice.Web\\Services\\UserContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Web\\Services\\UserContext.cs",
+              "RelativeToolTip": "..\\DeductionsPractice.Web\\Services\\UserContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T07:06:40.558Z",
+              "WhenOpened": "2025-07-14T11:53:47.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Web\\Program.cs",
+              "RelativeDocumentMoniker": "..\\DeductionsPractice.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Web\\Program.cs",
+              "RelativeToolTip": "..\\DeductionsPractice.Web\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T11:27:09.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "NdasendaApiClient.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\NdasendaApiClient.cs",
               "RelativeDocumentMoniker": "NdasendaApiClient.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\NdasendaApiClient.cs",
               "RelativeToolTip": "NdasendaApiClient.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAwwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T07:06:19.268Z",
+              "WhenOpened": "2025-07-14T11:23:50.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Web\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\DeductionsPractice.Web\\Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Web\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "..\\DeductionsPractice.Web\\Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T10:48:27.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAWwNsAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T07:06:17.853Z",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Web\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "..\\DeductionsPractice.Web\\Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Web\\Pages\\Login.cshtml",
+              "RelativeToolTip": "..\\DeductionsPractice.Web\\Pages\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-14T10:47:43.924Z",
               "EditorCaption": ""
             }
           ]

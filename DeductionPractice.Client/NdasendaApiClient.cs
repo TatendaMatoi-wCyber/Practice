@@ -48,6 +48,25 @@ public class NdasendaApiClient
         _log = logger;
     }
 
+    public void OverrideCredentials(string username, string password)
+    {
+        _options.Username = username;
+        _options.Password = password;
+    }
+    public async Task<bool> EnsureAuthenticatedAsync()
+    {
+        if (IsAuthenticated)
+        {
+            _log.LogDebug("Already authenticated with valid token.");
+            return true;
+        }
+
+        _log.LogInformation("Authenticating with Ndasenda...");
+        return await AuthenticateAsync();
+    }
+    public string? AccessToken => _options.AccessToken;
+
+
     private async Task<bool> AuthenticateAsync()
     {
         _log.LogInformation("Authenticating...");
@@ -91,11 +110,15 @@ public class NdasendaApiClient
         }
     }
 
+    public Task<AccountCheckResponse?> CheckAccountAsync(Security securityToken)
+     => SendRequest<AccountCheckResponse?>($"/api/v1/Account/check", HttpMethod.Post, securityToken);
 
+    //DeductionRequests
+    public Task<JRequestsBatch?> GetDeductionRequestAsync(string batchId)
+         => SendRequest<JRequestsBatch?>($"/api/v1/deductions/requests/{batchId}", HttpMethod.Post);
     public Task<JRequestsBatch?> PostDeductionRequestAsync(JRequestsBatch batch)
          => SendRequest<JRequestsBatch?>($"/api/v1/deductions/requests", HttpMethod.Post, batch);
-    public Task<AccountCheckResponse?> CheckAccountAsync(Security securityToken)
-         => SendRequest<AccountCheckResponse?>($"/api/v1/Account/check", HttpMethod.Post, securityToken);
+
     public Task<JRequestsBatch?> CommitDeductionBatchAsync(string batchId)
         => SendRequest<JRequestsBatch?>($"/api/v1/deductions/requests/commit/{batchId}", HttpMethod.Post);
 
@@ -107,6 +130,10 @@ public class NdasendaApiClient
 
     public Task<JPaymentBatch?> GetPaymentBatchAsync(string Id)
          => SendRequest<JPaymentBatch?>($"/api/v1/deductions/payments/{Id}", HttpMethod.Get);
+
+
+
+
 
     private async Task<T?> SendRequest<T>(string api, HttpMethod httpMethod, object? data = null) where T : new()
     {

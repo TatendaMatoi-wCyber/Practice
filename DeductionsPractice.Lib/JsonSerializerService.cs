@@ -16,15 +16,6 @@ namespace DeductionsPractice.Lib
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             WriteIndented = true
         };
-        public static readonly JsonSerializerOptions ToJsonOptions = new JsonSerializerOptions
-        {
-            AllowTrailingCommas = true,
-            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-            IgnoreReadOnlyProperties = true,
-            PropertyNameCaseInsensitive = true,
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-            WriteIndented = true
-        };
 
         static JsonSerializerService()
         {

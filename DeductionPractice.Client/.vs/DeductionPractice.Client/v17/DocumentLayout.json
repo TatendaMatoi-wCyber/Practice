@@ -1,25 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\deductioncodeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\deductioncodestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0368C56-2E8B-4286-A6E4-C8CBB17964C4}|..\\DeductionsPractice.Lib\\DeductionsPractice.Lib.csproj|c:\\users\\hp\\desktop\\practice\\deductionspractice.lib\\jsonserializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|c:\\users\\hp\\desktop\\practice\\deductionpractice.client\\ndasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:ndasendaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|c:\\users\\hp\\desktop\\practice\\deductionpractice.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -27,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DeductionCodeInfo.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\DeductionCodeInfo.cs",
-              "RelativeDocumentMoniker": "..\\DeductionsPractice.Lib\\DeductionCodeInfo.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\DeductionCodeInfo.cs",
-              "RelativeToolTip": "..\\DeductionsPractice.Lib\\DeductionCodeInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T12:28:51.483Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -57,58 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DeductionCodeStatus.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\DeductionCodeStatus.cs",
-              "RelativeDocumentMoniker": "..\\DeductionsPractice.Lib\\DeductionCodeStatus.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\DeductionCodeStatus.cs",
-              "RelativeToolTip": "..\\DeductionsPractice.Lib\\DeductionCodeStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T12:29:07.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "JsonSerializerService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\JsonSerializerService.cs",
-              "RelativeDocumentMoniker": "..\\DeductionsPractice.Lib\\JsonSerializerService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionsPractice.Lib\\JsonSerializerService.cs",
-              "RelativeToolTip": "..\\DeductionsPractice.Lib\\JsonSerializerService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAiwCsAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T07:06:40.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NdasendaApiClient.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\NdasendaApiClient.cs",
-              "RelativeDocumentMoniker": "NdasendaApiClient.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\NdasendaApiClient.cs",
-              "RelativeToolTip": "NdasendaApiClient.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAWwIwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T07:06:19.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAWwM0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T07:06:17.853Z",
-              "EditorCaption": ""
             }
           ]
         }
