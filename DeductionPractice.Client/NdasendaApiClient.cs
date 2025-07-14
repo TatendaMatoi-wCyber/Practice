@@ -1,14 +1,15 @@
-﻿using DeductionsPractice.Lib;
+﻿using DeductionPractice.Client;
+using DeductionsPractice.Lib;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.Text.Json;
-using DeductionPractice.Client;
-using Microsoft.Extensions.Options;
-using Microsoft.Extensions.Logging;
 using System.Text;
-using Microsoft.Extensions.Configuration;
+using System.Text.Json;
+using System.Threading.Tasks;
 
 public class NdasendaApiClient
 {
@@ -32,6 +33,7 @@ public class NdasendaApiClient
 
     private readonly ApiClientOptions _options;
     private readonly ILogger<NdasendaApiClient> _log;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
     private DateTime TokenExpiryDate { get; set; }
     private bool IsAuthenticated => TokenExpiryDate > DateTime.Now && !string.IsNullOrWhiteSpace(_options.AccessToken);
@@ -42,11 +44,14 @@ public class NdasendaApiClient
         _log = logger;
     }
 
-    public NdasendaApiClient(IOptions<ApiClientOptions> options, ILogger<NdasendaApiClient> logger)
+    public NdasendaApiClient(IOptions<ApiClientOptions> options, ILogger<NdasendaApiClient> logger, IHttpContextAccessor httpContextAccessor)
     {
         _options = options.Value;
         _log = logger;
+        _httpContextAccessor = httpContextAccessor;
     }
+
+
 
     public void OverrideCredentials(string username, string password)
     {

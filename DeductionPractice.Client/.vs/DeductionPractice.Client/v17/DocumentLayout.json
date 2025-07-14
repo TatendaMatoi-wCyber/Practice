@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|c:\\users\\hp\\desktop\\practice\\deductionpractice.client\\deductionpractice.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6298F368-5D3C-429B-8DD8-B6E99B93EA56}|DeductionPractice.Client.csproj|solutionrelative:deductionpractice.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +31,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DeductionPractice.Client",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\DeductionPractice.Client.csproj",
+              "RelativeDocumentMoniker": "DeductionPractice.Client.csproj",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Practice\\DeductionPractice.Client\\DeductionPractice.Client.csproj",
+              "RelativeToolTip": "DeductionPractice.Client.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-14T13:45:15.615Z",
+              "EditorCaption": ""
             }
           ]
         }

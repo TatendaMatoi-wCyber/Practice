@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeductionsPractice.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e17a7f79bd029025bf861ee4b0c8d83d3953936")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c866f869c47bce113a40c6794279622fe965f7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeductionsPractice.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeductionsPractice.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

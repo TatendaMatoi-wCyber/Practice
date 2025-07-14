@@ -1,3 +1,5 @@
+using DeductionsPractice.Lib;
+using Microsoft.AspNetCore.Authentication.Cookies;
 namespace DeductionsPractice.Web
 {
     public class Program
@@ -8,6 +10,17 @@ namespace DeductionsPractice.Web
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Login";
+                    options.LogoutPath = "/Logout";
+                    options.ExpireTimeSpan = TimeSpan.FromHours(1);
+                    options.SlidingExpiration = true;
+                });
+            builder.Services.Configure<ApiClientOptions>(builder.Configuration.GetSection("Ndasenda"));
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddScoped<NdasendaApiClient>();
 
             var app = builder.Build();
 
@@ -23,7 +36,7 @@ namespace DeductionsPractice.Web
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapRazorPages();
